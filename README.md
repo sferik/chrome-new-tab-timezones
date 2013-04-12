@@ -1,5 +1,4 @@
-![A gif-in-action](https://f.cloud.github.com/assets/846194/373560/14e80be6-a384-11e2-9905-713713798aaa.gif)
-![what it actually looks like because the gif sucks](https://dl.dropbox.com/s/ubiqtcfmlc4xq9u/2013-04-12_at_5.18.54_PM.png)
+![A gif-in-action](https://f.cloud.github.com/assets/846194/373582/d36f33b4-a384-11e2-9cff-117cf68a5e0e.gif)
 
 ## Chrome New Tab Timezones
 
