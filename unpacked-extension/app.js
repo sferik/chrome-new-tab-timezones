@@ -6,36 +6,42 @@ function $(query) {
 }
 
 function init() {
-    updateDateAndTime();
+    updateTimes();
     setupOriginalNewTabLinkAndDoubleClick();
 }
 
-function updateDateAndTime() {
-    var now, hours, minutes, seconds, time, dayName, day, month, year, date;
+function updateTimes() {
+    var now, suffex, hours, offset, times, minutes, seconds, time, dayName, day, month, year, date;
 
-    now = new Date();
-    hours = now.getHours();
-    minutes = now.getMinutes();
-    seconds = now.getSeconds();
+    times = document.querySelectorAll('.time');
 
-    if (hours >= 12) hours -= 12;
-    if (hours === 0) hours = 12;
-    if (minutes <= 9) minutes = '0' + minutes;
-    if (seconds <= 9) seconds = '0' + seconds;
-    time = hours + ':' + minutes + ':' + seconds;
+    for (var i = 0, len = times.length; i < len; i++ ) {
+        offset = times[i].getAttribute('data-utc-offset');
 
-    dayName = weekdays[now.getDay()];
-    day = now.getDate();
-    month = monthnames[now.getMonth()];
-    year = now.getFullYear();
-    date = dayName + ', ' + month + ' ' + day + ', ' + year;
+        now = timeFromUtcOffset(offset)
+        hours = now.getHours();
+        minutes = now.getMinutes();
+        seconds = now.getSeconds();
 
-    $('.time').innerHTML = time;
-    $('.date').innerHTML = date;
+        if (minutes <= 9) minutes = '0' + minutes;
+        if (seconds <= 9) seconds = '0' + seconds;
+
+        time = hours + ':' + minutes + ':' + seconds;
+        times[i].innerHTML = time;
+    }
 
     setTimeout(function(){
-        updateDateAndTime();
+        updateTimes();
     }, 1000);
+}
+
+function timeFromUtcOffset(offset) {
+    var date, utc, new_date;
+
+    date = new Date();
+    utc = date.getTime() + (date.getTimezoneOffset() * 60000);
+
+    return new Date(utc + (3600000*offset));
 }
 
 function setupOriginalNewTabLinkAndDoubleClick() {

@@ -1,26 +1,30 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Untitled</title> <!-- Match the text Chrome shows before loading the new tab -->
+    <title>New Tab</title> <!-- Match the text Chrome shows before loading the new tab -->
     <style>
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             background-color: #fff;
             color: #444;
             font-weight: 200;
-            font-size: 16px;
+            opacity: 0.9;
+            font-size: 18px;
             -webkit-user-select: none;
         }
 
         .date-and-time {
-            position: fixed;
-            bottom: 20px;
+            top: 20px;
             left: 20px;
         }
 
-        .date {
-            opacity: 0.6;
-            margin-left: 10px;
+        .time {
+            opacity: 1;
+        }
+
+        .suffex {
+            font-size: 18px;
+            opacity: 0.8;
         }
 
         .original-new-tab {
@@ -35,13 +39,32 @@
         .original-new-tab:active {
             color: #000;
         }
+
+        .times {
+            list-style-type: none;
+            line-height: 40px;
+        }
+
+        .location {
+            opacity: 0.6;
+        }
+
+        li {
+            display: inline;
+            padding-left: 5%;
+        }
     </style>
     <link rel="shortcut icon" href="favicon.png" /> <!-- Match the favicon Chrome shows before loading the new tab -->
 </head>
 <body>
     <div class="date-and-time">
-        <span class="time">&nbsp;</span>
-        <span class="date">&nbsp;</span>
+        <ul class="times">
+            <li><span class="time" data-utc-offset="-7">&nbsp;</span><span class="location"> in San Francisco</span></li>
+            <li><span class="time" data-utc-offset="-4">&nbsp;</span><span class="location"> in New York</span></li>
+            <li><span class="time" data-utc-offset="-5">&nbsp;</span><span class="location"> in Chicago</span></li>
+            <li><span class="time" data-utc-offset="+2">&nbsp;</span><span class="location"> in Berlin</span></li>
+            <li><span class="time">&nbsp;</span><span class="location"> UTC</span></li>
+        </ul>
     </div>
     <div class="original-new-tab">&nbsp;</div>
     <script src="app.js"></script>
