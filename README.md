@@ -1,4 +1,4 @@
-![A gif-in-action](https://f.cloud.github.com/assets/846194/373522/3d1770bc-a383-11e2-91b6-cfe01390ccec.gif)
+![A gif-in-action](https://f.cloud.github.com/assets/846194/373560/14e80be6-a384-11e2-9905-713713798aaa.gif)
 
 ## Chrome New Tab Timezones
 
