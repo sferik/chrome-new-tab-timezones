@@ -1,16 +1,28 @@
-![New Tab](https://raw.github.com/adamschwartz/chrome-new-tab/master/unpacked-extension/icons/icon128.png)
+![A gif-in-action](https://f.cloud.github.com/assets/846194/373522/3d1770bc-a383-11e2-91b6-cfe01390ccec.gif)
 
-## Chrome New Tab
+## Chrome New Tab Timezones
+
+Because you're so cultured, right?
 
 ### On the Chrome Web Store
 
-Visit the [New Tab on the Chrome Web Store](https://chrome.google.com/webstore/detail/new-tab/adcpijkmbecohfalcbafjgadfnpchhlg) and choose "Add to Chrome".
-
-[<img src="https://s3.amazonaws.com/uploads.hipchat.com/10819/42395/dfzab6ugxvq9337/upload.png">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=D6XM3J8GW548W)
+Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/new-tab/adcpijkmbecohfalcbafjgadfnpchhlg) and choose "Add to Chrome". Then you'll have it. Shaboom.
 
 ### Local Installation
 `git clone` this repo. Go to Chrome Settings > Extensions ([chrome://extensions](chrome://extensions)). Choose "Load unpacked extension" and choose the `unpacked-extension` folder in this repo. Disable the extension to switch back to the original Chrome New Tab page.
 
+### Customization
+
+Install locally and change or add to the list in `newtab.html`:
+
+```html
+<li><span class="time" data-utc-offset="-7">&nbsp;</span><span class="location"> in San Francisco</span></li>
+```
+
+Change the city name and `data-utc-offset`, or add a new `<li>` with the same.
+
 ### Credit
 
-Based on [tech-no-crat](https://github.com/tech-no-crat)'s [chrome-newtab-minimalism](https://github.com/tech-no-crat/chrome-newtab-minimalism).
+Based on [adamschwartz](https://github.com/tech-no-crat)'s [chrome-new-tab](https://github.com/tech-no-crat/chrome-newtab-minimalism) who based his newtab page on [tech-no-crat](https://github.com/tech-no-crat)'s [chrome-newtab-minimalism](https://github.com/tech-no-crat/chrome-newtab-minimalism).
+
+*How deep does the credit go??!*
