@@ -4,12 +4,10 @@
 
 Because you're so cultured, right?
 
-### On the Chrome Web Store
-
-Go to the [Chrome Web Store](https://chrome.google.com/webstore/detail/new-tab/adcpijkmbecohfalcbafjgadfnpchhlg) and choose "Add to Chrome". Then you'll have it. Shaboom.
-
 ### Local Installation
-`git clone` this repo. Go to Chrome Settings > Extensions ([chrome://extensions](chrome://extensions)). Choose "Load unpacked extension" and choose the `unpacked-extension` folder in this repo. Disable the extension to switch back to the original Chrome New Tab page.
+`git clone` this repo. Go to Chrome Settings > Extensions ([chrome://extensions](chrome://extensions)). Choose "Load unpacked extension" and choose the `unpacked-extension` folder in this repo.
+
+Disable the extension to switch back to the original Chrome New Tab page.
 
 ### Customization
 
