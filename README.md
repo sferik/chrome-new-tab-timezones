@@ -21,6 +21,6 @@ Change the city name and `data-utc-offset`, or add a new `<li>` with the same.
 
 ### Credit
 
-Based on [adamschwartz](https://github.com/tech-no-crat)'s [chrome-new-tab](https://github.com/tech-no-crat/chrome-newtab-minimalism) who based his newtab page on [tech-no-crat](https://github.com/tech-no-crat)'s [chrome-newtab-minimalism](https://github.com/tech-no-crat/chrome-newtab-minimalism).
+Based on [adamschwartz](https://github.com/adamschwartz)'s [chrome-new-tab](https://github.com/adamschwartz/chrome-new-tab) who based his newtab page on [tech-no-crat](https://github.com/tech-no-crat)'s [chrome-newtab-minimalism](https://github.com/tech-no-crat/chrome-newtab-minimalism).
 
 *How deep does the credit go??!*
